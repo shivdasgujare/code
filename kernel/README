@@ -1,0 +1,12 @@
+Good Weblinks to read
+
+For accessing kernel from userspace
+===================================
+http://people.ee.ethz.ch/~arkeller/linux/kernel_user_space_howto.html
+
+For writing device driver
+=========================
+
+The Linux Kernel Module Programming Guide
+
+http://www.tldp.org/LDP/lkmpg/2.6/html/lkmpg.html
