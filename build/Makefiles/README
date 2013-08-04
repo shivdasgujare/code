@@ -19,3 +19,54 @@ Makefile __
            |______ file3.c ____ file3.o ____|
 
 
+============================== Writing Simple Makefile ============================
+
+Refer to simple-make-file directory for more reference
+
+       ____________________ Start of Makefile __________________________
+
+	# define default target (first target = default)
+	# it depends on 'hello.o' (which will be created if necessary)
+	# and hello_func.o (same as hello.o)
+
+	hello: hello.o hello_func.o
+        	gcc -Wall hello.o hello_func.o -o hello
+
+	# define hello.o target
+	# it depends on hello.c (and is created from it)
+	# also depends on hello_api.h which would mean that
+	# changing the hello.h api would force make to rebuild
+	# this target (hello.o).
+	# gcc -c: compile only, do not link
+
+	hello.o: hello.c hello_api.h
+        	gcc -Wall -c hello.c -o hello.o
+
+	# define hello_func.o target
+	# it depends on hello_func.c (and is created from)
+	# and hello_api.h (since that's its declaration)
+
+	hello_func.o: hello_func.c hello_api.h
+        	gcc -Wall -c hello_func.c -o hello_func.o
+
+	# for above line TAB is must 
+
+       ____________________ End of Makefile ____________________________
+
+* Comments are lines that start with the #-character.
+
+* A line that starts at column 0 (start of the line) and contains a
+  colon character (:) is considered a rule. The name on the left side of
+  the colon is created by the commands. This name is called a target.
+  Any filenames specified after the colon are the files that the target
+  depends on. They are called prerequisites (i.e. they are required to exist,
+  before make decides to create the target.
+
+* Lines starting with the TAB are commands that make will run to achieve
+  the target.
+
+* The first target given in a makefile is the default target.
+
+* The order of filenames that make attempts to open is :
+	 GNUMakefile, Makefile and finally makefile.
+
