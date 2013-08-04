@@ -1,4 +1,21 @@
 Reference Weblinks
 =================
 
+Target : the final binary which is to be created is called target
+
 http://maemo.org/maemo_release_documentation/maemo4.1.x/node5.html
+
+Makefile __
+           |
+           |_____ main.c _____ main.o ________________________________ application
+           |        |                                                  |
+           |        |                                                  |
+           |       header.h                                            |
+           |                                                           |
+           |______ file1.c ____ file1.o ____                           |
+           |                                |                          |
+           |______ file2.c ____ file2.o ____|______ lib.so / lib.a ____|
+           |                                |
+           |______ file3.c ____ file3.o ____|
+
+
