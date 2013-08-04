@@ -1,0 +1,48 @@
+
+* List available packages after parsing all recipes. "bitbake -s > packages.txt"
+
+	$ bitbake -s
+
+
+* To get a package build 
+
+	$ bitbake foo
+	where foo is the name of the package without any extension or version number.
+
+* Clean up
+
+	$ bitbake -c clean foo
+
+	This command will clean up your tmp dir for the given package.
+	It is very useful if you work on a new .bb recipe. Without it your changes to the recipe may not work.
+
+
+* To recompile your source code if you change a line in it.
+
+	$ bitbake -f -c compile foo
+
+	The command above recompiled the code for foo.
+
+* View a list of possible tasks to run on the foo package.
+
+	$ bitbake foo -c listtasks
+
+* To build the ipk use the command below
+
+	$ bitbake foo
+
+* Check Recipe Version
+
+	$ bitbake -s | grep foo
+
+* Check Bitbake Version
+
+	$ bitbake --version
+
+* Run Bitbake A Little at a Time
+
+	$ bitbake -n foo
+
+* lists the tasks
+
+	$ bitbake -c taskname foo

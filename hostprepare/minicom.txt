@@ -1,0 +1,20 @@
+Seeting Up Minicom
+=================
+$ sudo apt-get install minicom
+
+$ sudo minicom -s
+
+ +-----------------------------------------------------------------------+
+   | A -    Serial Device      : /dev/ttyS0                                |
+   | B - Lockfile Location     : /var/lock                                 |
+   | C -   Callin Program      :                                           |
+   | D -  Callout Program      :                                           |
+   | E -    Bps/Par/Bits       : 115200 8N1                                |
+   | F - Hardware Flow Control : No                                        |
+   | G - Software Flow Control : No                                        |
+   |                                                                       |
+   |    Change which setting?                                              |
+   +-----------------------------------------------------------------------+
+
+Reference :
+	http://processors.wiki.ti.com/index.php/Setting_up_Minicom_in_Ubuntu

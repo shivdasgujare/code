@@ -1,0 +1,7 @@
+
+
+
+
+
+
+Reference: http://www.multitech.net/developer/products/multiconnect-ocg/development/writing-bitbake-recipes/

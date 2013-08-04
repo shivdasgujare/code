@@ -1,0 +1,10 @@
+Bluetooth Information
+====================
+
+* Bluetooth is a wireless technology standard for exchanging data over short distances.
+* using short-wavelength radio transmissions in the ISM band from 2400–2480 MHz. 
+* Created by telecom vendor Ericsson in 1994.
+* Bluetooth was standardized as IEEE 802.15.1.
+* Bluetooth is a packet-based protocol with a master-slave structure. One master may
+  communicate with up to 7 slaves in a piconet; all devices share the master's clock.
+
