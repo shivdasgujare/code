@@ -2,6 +2,15 @@ This is readme for bluetooth related packages need for
 getting bluetooth peripheral working.
 ======================================================
 
+Bluez Code is available at
+	http://www.bluez.org/development/git/
+
+Turn ON Bluetooth
+=================
+$ rfkill list
+
+$ rfkill unblock bluetooth
+
 Bluez
 =====
 
